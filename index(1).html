@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cremería La Ideal | Transformación Digital con Equidad</title>
+  <style>
+    :root{
+      --verde:#0f7a4f;
+      --verde2:#22a06b;
+      --azul:#0d3b5c;
+      --claro:#eef8f4;
+      --texto:#102033;
+      --blanco:#ffffff;
+      --sombra:0 12px 35px rgba(0,0,0,.12);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--claro);color:var(--texto);line-height:1.6}
+    nav{
+      position:sticky;top:0;z-index:10;
+      background:rgba(13,59,92,.95);color:white;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:14px 7%;box-shadow:0 4px 14px rgba(0,0,0,.18)
+    }
+    nav h2{font-size:1.1rem}
+    nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold;font-size:.95rem}
+    nav a:hover{color:#b7f0d2}
+    header{
+      min-height:88vh;color:white;
+      background:linear-gradient(rgba(6,24,39,.70),rgba(6,24,39,.75)),
+      url('https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=1600&q=80') center/cover;
+      display:grid;place-items:center;text-align:center;padding:50px 7%;
+    }
+    .hero{max-width:900px}
+    .tag{display:inline-block;background:#b7f0d2;color:#07351f;padding:10px 18px;border-radius:25px;font-weight:bold;margin-bottom:20px}
+    h1{font-size:3.2rem;line-height:1.1;margin-bottom:18px}
+    .hero p{font-size:1.2rem;margin-bottom:28px}
+    .btn{
+      display:inline-block;background:var(--verde2);color:white;
+      padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;
+      border:none;cursor:pointer;transition:.3s
+    }
+    .btn:hover{transform:translateY(-3px);background:#188a5b}
+    section{padding:65px 7%}
+    h2{color:var(--azul);font-size:2rem;margin-bottom:18px;text-align:center}
+    .intro{text-align:center;max-width:850px;margin:0 auto 30px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+    .card{
+      background:white;border-radius:18px;padding:25px;box-shadow:var(--sombra);
+      border-top:6px solid var(--verde2);transition:.3s
+    }
+    .card:hover{transform:translateY(-6px)}
+    .card h3{color:var(--verde);margin-bottom:10px}
+    .dark{background:#102033;color:white}
+    .dark h2,.dark h3{color:#b7f0d2}
+    .accordion{max-width:900px;margin:25px auto}
+    .acc-btn{
+      width:100%;text-align:left;padding:18px;margin:8px 0;
+      background:white;border:none;border-radius:14px;font-size:1rem;font-weight:bold;
+      color:var(--azul);cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.08)
+    }
+    .acc-content{
+      display:none;background:#ffffff;padding:18px;border-radius:0 0 14px 14px;
+      margin-top:-8px;margin-bottom:10px;color:#102033
+    }
+    table{width:100%;border-collapse:collapse;background:white;border-radius:14px;overflow:hidden;box-shadow:var(--sombra)}
+    th{background:var(--verde);color:white}
+    th,td{padding:14px;border-bottom:1px solid #dce8e4;text-align:left}
+    .counter-box{text-align:center;background:white;border-radius:18px;padding:25px;box-shadow:var(--sombra)}
+    .num{font-size:2.3rem;font-weight:bold;color:var(--verde)}
+    .quiz{max-width:850px;margin:auto;background:white;border-radius:18px;padding:25px;box-shadow:var(--sombra)}
+    .option{display:block;margin:10px 0;padding:12px;border:1px solid #cfe1dc;border-radius:12px;cursor:pointer}
+    .option:hover{background:#eef8f4}
+    #result{font-weight:bold;margin-top:15px;color:var(--verde)}
+    footer{background:#071827;color:white;text-align:center;padding:28px 7%}
+    @media(max-width:760px){
+      nav{flex-direction:column;gap:10px}
+      nav a{margin:0 7px;font-size:.85rem}
+      h1{font-size:2.25rem}
+      section{padding:45px 5%}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Cremería La Ideal</h2>
+  <div>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#capacitacion">Capacitación</a>
+    <a href="#diagnostico">Diagnóstico</a>
+    <a href="#quiz">Quiz</a>
+  </div>
+</nav>
+
+<header id="inicio">
+  <div class="hero">
+    <span class="tag">Proyecto digital interactivo</span>
+    <h1>Transformación Digital con Equidad</h1>
+    <p>Protocolo de capacitación e inclusión para Cremería La Ideal, con enfoque en equidad de género, tecnología y comercio local.</p>
+    <a class="btn" href="#objetivos">Explorar página</a>
+  </div>
+</header>
+
+<section id="objetivos">
+  <h2>Objetivos del sitio</h2>
+  <p class="intro">Esta página busca informar, sensibilizar y capacitar al personal mediante herramientas digitales fáciles de entender.</p>
+  <div class="grid">
+    <div class="card"><h3>Informar</h3><p>Explica la importancia de la equidad de género y la inclusión tecnológica en negocios locales.</p></div>
+    <div class="card"><h3>Sensibilizar</h3><p>Promueve respeto, igualdad de oportunidades y eliminación de estereotipos laborales.</p></div>
+    <div class="card"><h3>Capacitar</h3><p>Propone cursos para que mujeres y hombres usen herramientas digitales por igual.</p></div>
+  </div>
+</section>
+
+<section class="dark" id="capacitacion">
+  <h2>Capacitación interactiva</h2>
+  <p class="intro">Haz clic en cada tema para desplegar la información.</p>
+  <div class="accordion">
+    <button class="acc-btn">1. Igualdad de género</button>
+    <div class="acc-content">Perspectiva de género, igualdad de oportunidades, prevención de discriminación y respeto laboral.</div>
+
+    <button class="acc-btn">2. Capacitación tecnológica</button>
+    <div class="acc-content">Uso básico de computadora, Excel, inventarios digitales, terminal bancaria, pedidos electrónicos y facturación.</div>
+
+    <button class="acc-btn">3. Atención al cliente y liderazgo</button>
+    <div class="acc-content">Comunicación efectiva, resolución de conflictos, liderazgo colaborativo y trabajo en equipo.</div>
+
+    <button class="acc-btn">4. Marketing digital</button>
+    <div class="acc-content">Uso de WhatsApp Business, Facebook, Instagram, publicaciones digitales y atención al cliente en línea.</div>
+  </div>
+</section>
+
+<section id="diagnostico">
+  <h2>Diagnóstico de brecha digital de género</h2>
+  <div class="grid">
+    <div class="counter-box"><div class="num" data-target="30">0</div><p>% aproximado de mujeres profesionistas STEM en México</p></div>
+    <div class="counter-box"><div class="num" data-target="35">0</div><p>% de graduadas STEM a nivel mundial</p></div>
+    <div class="counter-box"><div class="num" data-target="22">0</div><p>% de empleos STEM ocupados por mujeres en países del G20</p></div>
+  </div>
+</section>
+
+<section class="dark">
+  <h2>Relación con Cremería La Ideal</h2>
+  <div class="grid">
+    <div class="card"><h3>Inventarios digitales</h3><p>Ayudan a controlar entradas, salidas y productos perecederos.</p></div>
+    <div class="card"><h3>Ventas y pagos</h3><p>Facilitan el uso de caja, terminal bancaria y registro de ventas.</p></div>
+    <div class="card"><h3>Refrigeración</h3><p>Permiten vigilar la conservación de lácteos y embutidos.</p></div>
+    <div class="card"><h3>Publicidad digital</h3><p>Ayuda a promocionar productos por redes sociales y WhatsApp.</p></div>
+  </div>
+</section>
+
+<section id="quiz">
+  <h2>Mini quiz interactivo</h2>
+  <div class="quiz">
+    <p><strong>Pregunta:</strong> ¿Por qué es importante capacitar por igual a mujeres y hombres en tecnología?</p>
+    <label class="option"><input type="radio" name="q" value="a"> Porque mejora la igualdad de oportunidades y el desempeño del negocio.</label>
+    <label class="option"><input type="radio" name="q" value="b"> Porque solo algunas personas deben usar tecnología.</label>
+    <label class="option"><input type="radio" name="q" value="c"> Porque la tecnología no sirve en negocios pequeños.</label>
+    <button class="btn" onclick="checkQuiz()">Ver respuesta</button>
+    <p id="result"></p>
+  </div>
+</section>
+
+<section>
+  <h2>Conclusión</h2>
+  <div class="card">
+    <p>La Cremería La Ideal puede mejorar su organización si incorpora tecnología de forma inclusiva. Capacitar por igual a mujeres y hombres ayuda a reducir desigualdades, mejorar el ambiente laboral y hacer más competitivo el negocio.</p>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Universidad Nacional Rosario Castellanos</strong></p>
+  <p>Licenciatura en Contaduría y Finanzas | Proyecto académico: Cremería La Ideal</p>
+</footer>
+
+<script>
+  document.querySelectorAll('.acc-btn').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const content = btn.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+
+  const nums = document.querySelectorAll('.num');
+  const speed = 25;
+  nums.forEach(num=>{
+    const target = +num.getAttribute('data-target');
+    let count = 0;
+    const update = () => {
+      if(count < target){
+        count++;
+        num.innerText = count;
+        setTimeout(update, speed);
+      } else {
+        num.innerText = target;
+      }
+    };
+    update();
+  });
+
+  function checkQuiz(){
+    const answer = document.querySelector('input[name="q"]:checked');
+    const result = document.getElementById('result');
+    if(!answer){result.innerText='Selecciona una respuesta.'; return;}
+    if(answer.value === 'a'){
+      result.innerText='¡Correcto! La capacitación equitativa mejora la inclusión y la productividad.';
+    }else{
+      result.innerText='Incorrecto. La respuesta correcta es la primera opción.';
+    }
+  }
+</script>
+
+</body>
+</html>
